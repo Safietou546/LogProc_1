@@ -87,7 +87,7 @@ body {
     transition: color 0.2s ease;
 }
 
-.nav-links a:hover { color: #00A86B; }
+
 
 .nav-links .cta-btn {
     background: #003087;
@@ -97,9 +97,10 @@ body {
     font-size: 0.85rem;
 }
 
-.nav-links .cta-btn:hover { background: #00A86B; }
+
 /* ==========================================================================
    HAMBURGER TRIGGER BUTTON (Hidden by default on Desktop layout)
+   .nav-links a:hover { color: #00A86B; }
    ========================================================================== */
 .menu-toggle {
     display: none;
@@ -243,7 +244,7 @@ body {
     font-size: 0.95rem;
     transition: all 0.2s ease;
 }
-
+cta-btn
 .btn:hover {
     background: #008754;
     transform: translateY(-1px);

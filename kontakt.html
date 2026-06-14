@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - LogProc</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/formular.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="brand">
+        <span style="margin-right: 10px; margin-left:10px;">
+            <img src="images/img.png" alt="Logo">
+        </span>
+        <div class="brand-text">
+            <span class="company-name">LogProc</span>
+            <span class="tagline">Next-Level Logistics Procurement</span>
+        </div>
+    </div>
+
+    <div class="menu-toggle" id="mobileMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="#">Service</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="formular.html" class="cta-btn">Jetzt starten</a>
+    </div>
+</nav>
+
+<main class="contact-wrapper">
+    <div class="contact-grid">
+
+        <div class="contact-form-container">
+            <h2>Schreiben Sie uns</h2>
+            <p>Lassen Sie uns gemeinsam herausfinden, wie viel Frachtkosten wir für Ihr Unternehmen einsparen können. Senden Sie uns einfach eine Nachricht.</p>
+
+            <form id="contactForm" method="POST">
+                <input type="hidden" name="access_key" value="DEIN-PROFI-KEY-HIER">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div class="form-group">
+                    <label for="name">Name / Unternehmen</label>
+                    <input type="text" id="name" name="name" placeholder="Ihr Name oder Firmenname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail-Adresse</label>
+                    <input type="email" id="email" name="email" placeholder="ihre-mail@unternehmen.de" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Wie können wir Ihnen helfen?" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Nachricht senden →</button>
+
+                <div id="formResponse" style="margin-top: 15px; font-size: 0.95rem; font-weight: 700; display: none;"></div>
+            </form>
+        </div>
+
+        <div class="contact-info-container">
+            <h3>Direkter Kontakt</h3>
+
+            <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div class="info-text">
+                    <h4>Anschrift</h4>
+                    <p>Musterstraße 12<br>10115 Berlin</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <div class="info-text">
+                    <h4>Telefon</h4>
+                    <p>+49 123 456 789</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <div class="info-text">
+                    <h4>E-Mail</h4>
+                    <p>info@logproc.de</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column brand-col">
+            <h3>LogProc</h3>
+            <p class="footer-tagline">Next-Level Logistics Procurement</p>
+            <p>Externer Logistik-Einkauf für Unternehmen, die Transportkosten nachhaltig senken und professionelle Beschaffungsexpertise nutzen möchten.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Kontakt</h4>
+            <p>Musterstraße 12, 10115 Berlin</p>
+            <p>+49 123 456 789 | info@logproc.de</p>
+        </div>
+        <div class="footer-column links-col">
+            <h4>Links</h4>
+            <div class="footer-links-grid">
+                <a href="index.html">Home</a>
+                <a href="#">Service</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2026 LogProc. Alle Rechte vorbehalten.
+    </div>
+</footer>
+
+<script>
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navLinks = document.getElementById('navLinks');
+
+    mobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+
+    const form = document.getElementById('contactForm');
+    const responseDiv = document.getElementById('formResponse');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', function(e) {
+        // 1. Verhindert, dass die Seite neu lädt
+        e.preventDefault();
+
+        // Visuelles Feedback für den Nutzer
+        submitBtn.innerText = "Wird gesendet...";
+        submitBtn.disabled = true;
+
+        // 2. Formulardaten automatisch sammeln
+        const formData = new FormData(form);
+
+        // Web3Forms verlangt, dass die Daten als JSON oder FormData geschickt werden
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        // 3. AJAX-Anfrage per Fetch API starten
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+            .then(async (response) => {
+                let result = await response.json();
+                if (response.status == 200) {
+                    // Erfolg: Grüne Meldung anzeigen
+                    responseDiv.style.display = "block";
+                    responseDiv.style.color = "#00A86B"; // Dein LogProc-Grün
+                    responseDiv.innerText = "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.";
+                    form.reset(); // Formular leeren
+                } else {
+                    // Fehler von der API
+                    responseDiv.style.display = "block";
+                    responseDiv.style.color = "#ff4d4d";
+                    responseDiv.innerText = result.message || "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.";
+                }
+            })
+            .catch(error => {
+                // Netzwerkfehler
+                responseDiv.style.display = "block";
+                responseDiv.style.color = "#ff4d4d";
+                responseDiv.innerText = "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.";
+            })
+            .then(() => {
+                // Button wieder in den Normalzustand versetzen
+                submitBtn.innerText = "Nachricht senden →";
+                submitBtn.disabled = false;
+            });
+    });
+</script>
+</body>
+</html>

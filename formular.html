@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogProc - Logistics Procurement</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/formular.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="brand">
+        <span style="margin-right: 10px; margin-left:10px;">
+            <img src="images/img.png" alt="Logo">
+        </span>
+        <div class="brand-text">
+            <span class="company-name">LogProc</span>
+            <span class="tagline">Next-Level Logistics Procurement</span>
+        </div>
+    </div>
+
+    <div class="menu-toggle" id="mobileMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="#">Service</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="formular.html" class="cta-btn">Jetzt starten</a>
+    </div>
+</nav>
+<main class="contact-wrapper">
+    <div class="contact-grid">
+
+        <div class="contact-form-container">
+<form id="startForm" method="POST">
+    <input type="hidden" name="access_key" value="DEIN-PROFI-KEY-HIER">
+    <input type="hidden" name="form_type" value="JETZT STARTEN – Projektanfrage">
+
+    <div class="form-group">
+        <label for="budget">Geschätztes jährliches Frachtbudget</label>
+        <select id="budget" name="frachtbudget" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 4px;">
+            <option value="" disabled selected>Bitte wählen...</option>
+            <option value="unter-250k">Unter 250.000 €</option>
+            <option value="250k-1mio">250.000 € – 1.000.000 €</option>
+            <option value="ueber-1mio">Über 1.000.000 €</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="transport">Hauptsächlicher Transportbereich</label>
+        <select id="transport" name="transportbereich" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 4px;">
+            <option value="" disabled selected>Bitte wählen...</option>
+            <option value="strasse">Straßentransporte (FTL/LTL)</option>
+            <option value="see-luft">See- & Luftfracht</option>
+            <option value="paket-kep">KEP / Paketdienstleistungen</option>
+            <option value="mix">Gemischtes Netzwerk</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="company">Unternehmen / Ansprechpartner</label>
+        <input type="text" id="company" name="unternehmen_und_name" placeholder="Firma GmbH / Herr Muster" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Geschäftliche E-Mail-Adresse</label>
+        <input type="email" id="email" name="email" placeholder="name@firma.de" required>
+    </div>
+
+    <button type="submit" class="submit-btn" id="submitBtn">Kostenlose Datenanalyse anfordern →</button>
+    <div id="formResponse" style="margin-top: 15px; font-size: 0.95rem; font-weight: 700; display: none;"></div>
+</form>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column brand-col">
+            <h3>LogProc</h3>
+            <p class="footer-tagline">Next-Level Logistics Procurement</p>
+            <p>Externer Logistik-Einkauf für Unternehmen, die Transportkosten nachhaltig senken und professionelle Beschaffungsexpertise nutzen möchten.
+            </p>
+        </div>
+        <div class="footer-column">
+            <h4>Kontakt</h4>
+            <p>Musterstraße 12, 10115 Berlin</p>
+            <p>+49 123 456 789 | info@logproc.de</p>
+        </div>
+        <div class="footer-column links-col">
+            <h4>Links</h4>
+            <div class="footer-links-grid">
+                <a href="index.html">Home</a>
+                <a href="#">Service</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2026 LogProc. Alle Rechte vorbehalten.
+    </div>
+</footer>
+
+
+</body>
+</html>
