@@ -598,3 +598,103 @@ cta-btn
     }
 }
 
+
+/*So arbeiten wir */
+/* Hauptcontainer (Karte) */
+.compact-process {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.subsection-small-title {
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    color: #0b2545;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+/* Horizontale Verteilung der 5 Spalten */
+.process-timeline-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Einzelne Spalte für jeden Hauptschritt */
+.process-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* Richtet die Unterpunkte linksbündig unter dem Titel aus */
+}
+
+.mini-step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+/* Kreise mit Zahlen */
+.step-dot {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.font-blue {
+    border: 2px solid #0b2545;
+    color: #0b2545;
+}
+
+.font-green {
+    border: 2px solid #00a86b;
+    color: #00a86b;
+}
+
+/* Unterpunkte-Liste */
+.sub-step-list {
+
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.sub-step-list li {
+    margin-bottom: 4px;
+    white-space: nowrap; /* Verhindert unschöne Umbrüche bei kurzen Begriffen */
+}
+
+.sub-step-list li span {
+    font-weight: 600;
+    color: #334155;
+    margin-right: 4px;
+}
+
+/* Responsive Anpassung für Mobilgeräte */
+@media (max-width: 768px) {
+    .process-timeline-bar {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+}

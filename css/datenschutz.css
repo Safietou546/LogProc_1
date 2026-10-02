@@ -1,0 +1,58 @@
+/* Styling für Rechts- und Textseiten (Datenschutz / Impressum) */
+.legal-page {
+    padding: 60px 20px 100px 20px; /* Großzügiger Abstand nach oben und unten (löst das Footer-Problem) */
+    background-color: #f8fafc;
+    min-height: calc(100vh - 300px); /* Stellt sicher, dass der Footer immer unten bleibt */
+}
+
+.legal-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+}
+
+.legal-container h1 {
+    font-size: 2rem;
+    color: #0b2545;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.legal-section {
+    margin-bottom: 28px;
+}
+
+.legal-section h2 {
+    font-size: 1.2rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.legal-section p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.legal-section a {
+    color: #00a86b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+.legal-date {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
